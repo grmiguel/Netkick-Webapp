@@ -1,0 +1,41 @@
+#titlearea{
+	background-color:#C0C0C0;
+	border-radius:25px;
+	
+	text-align:center;
+}
+
+.ip{
+	background-color:#C0C0C0;
+	border-radius:25px;
+	text-align:center;
+	font-size:40px;
+	width:140px;
+}
+
+.ipbin{
+	background-color:#C0C0C0;
+	border-radius:25px;
+	text-align:center;
+	font-size:22px;
+	display: inline-block;
+	width:146px;
+}
+
+#iprow{
+	
+	text-align:center;
+}
+
+#ipbinrow{
+	
+	text-align:center;
+
+
+	
+}
+
+
+body {
+	font-family: 'Julius Sans One', sans-serif;
+}
