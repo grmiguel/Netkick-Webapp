@@ -14,12 +14,12 @@
 		<h1  >Netkick</h1>
 	</div>
 	
-	<form method="post" >
+	<form id="iprows" method="post" >
 		
 	<p id="iprow">
 		
 		
-		<label for="ip1">IP:</label>
+		<label for="ip1" id="iptitle">IP Adress:</label>
 		</BR>
 		<input type="text" name="ip1" class="ip" id="ip1" onkeyup="updateip(ip1)">
 		
@@ -33,10 +33,10 @@
 		
 		
 	
-		<label type="text" class=ipbin id="ipbin1">00000000</label>
-		<label type="text" class=ipbin id="ipbin2">00000000</label>
-		<label type="text" class=ipbin id="ipbin3">00000000</label>
-		<label type="text" class=ipbin id="ipbin4">00000000</label>
+		<label type="text" class="ipbin" id="ipbin1">00000000</label>
+		<label type="text" class="ipbin" id="ipbin2">00000000</label>
+		<label type="text" class="ipbin" id="ipbin3">00000000</label>
+		<label type="text" class="ipbin" id="ipbin4">00000000</label>
 		
 	</p>
 		
