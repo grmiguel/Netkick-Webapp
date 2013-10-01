@@ -21,21 +21,27 @@
 		
 		<label for="ip1" id="iptitle">IP Adress:</label>
 		</BR>
-		<input type="text" name="ip1" class="ip" id="ip1" onkeyup="updateip(ip1)">
+		<input type="text" name="ip1" class="ip" id="ip1" onkeyup='updatebinary("ip1")'>
 		
-		<input type="text" name="ip2" class="ip" id="ip2">
-		<input type="text" name="ip3" class="ip" id="ip3">
-		<input type="text" name="ip4" class="ip" id="ip4">
+		<input type="text" name="ip2" class="ip" id="ip2" onkeyup='updatebinary("ip2")'>
+		.
+		<input type="text" name="ip3" class="ip" id="ip3" onkeyup='updatebinary("ip3")'>
+		.
+		<input type="text" name="ip4" class="ip" id="ip4" onkeyup='updatebinary("ip4")'>
 		
 	</p>
+
 	
 	<p id="ipbinrow">
 		
 		
 	
 		<label type="text" class="ipbin" id="ipbin1">00000000</label>
+		.
 		<label type="text" class="ipbin" id="ipbin2">00000000</label>
+		.
 		<label type="text" class="ipbin" id="ipbin3">00000000</label>
+		.
 		<label type="text" class="ipbin" id="ipbin4">00000000</label>
 		
 	</p>
@@ -58,34 +64,6 @@
 	</a>
 	
 	
-	<script type="text/javascript">
-	function updateip(whatlabel) {
-		
-		
-		var labeltoupdate="ipbin1";
-		
-		//if (whatlabel == ip1) labeltoupdate="ipbin1";
-	
-		//var test = binary(document.getElementById("ip1").value)
-	    document.getElementById(labeltoupdate).innerHTML = binary(document.getElementById("ip1").value);
-	}
-	
-	
-	function binary(value) {
-		if (value>0) var result=1;
-		else return 0;
-		
-		for (;value>1;value=Math.floor(value/2)){
-			result=result*10
-			if (value%2!=0) result++;
-		}
-		console.log("=");
-	  	console.dir(result);
-		return result;
-	}
-	
-	
-	</script>
-	
+	<script src="binary.js"></script>
 	
 </body>
