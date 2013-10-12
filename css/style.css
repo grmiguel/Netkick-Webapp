@@ -1,3 +1,9 @@
+
+*:focus { 
+	outline: none; 
+}
+
+
 #titlearea{
 	background-color:#C0C0C0;
 	border-radius:5px;
@@ -55,5 +61,6 @@
 
 body {
 	font-family: 'Julius Sans One', sans-serif;
+	
 
 }
